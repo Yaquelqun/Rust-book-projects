@@ -11,8 +11,7 @@ pub fn listen(mut request: Request) {
     let mut command = String::new();
     io::stdin().read_line(&mut command)
     .expect("Failed to read line");
-    request.raw = command;
-    parse(&request);
-
+    request.raw = command.to_string();
+    parse(&mut request);
   }
 }
