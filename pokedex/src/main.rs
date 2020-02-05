@@ -8,7 +8,7 @@ pub use crate::structs::Request;
 
 fn main() {
     let empty_request = Request {
-        dictionary: HashMap::new(),
+        pokedex: HashMap::new(),
         raw: String::from(""),
         parsed: [String::from(""), String::from(""), String::from("")]
     };
